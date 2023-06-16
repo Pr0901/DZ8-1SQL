@@ -12,15 +12,14 @@ public class DataHelper {
 
     @Value
     public static class AuthInfo {
-        private String login;
-        private String password;
+        String login;
+        String password;
     }
 
     @Value
     public static class VerificationCode {
-        private String code;
+        String code;
     }
-
 
     public static AuthInfo getAuthInfo() {
         return new AuthInfo("vasya", "qwerty123");
@@ -34,6 +33,5 @@ public class DataHelper {
         private String user_id;
         private String code;
         private String created;
-
     }
 }

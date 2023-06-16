@@ -15,6 +15,7 @@ public class SQLTest {
     static void clean() {
         SQLHelper.cleanDB();
     }
+
     @Test
     void validLogin() {
         open("http://localhost:9999");
@@ -25,5 +26,4 @@ public class SQLTest {
         var accountPage = new VerificationPage();
         accountPage.verification(verificationCode);
     }
-
 }
